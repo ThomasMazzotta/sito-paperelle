@@ -1,5 +1,6 @@
 //if the file in the navbar is called index.tsx, there is no need to include it in the import
 import Navbar from "@/scenes/navbar"
+import Home from "@/scenes/home"
 import { useEffect, useState } from "react"
 import { SelectedPage } from "./shared/types"
 
@@ -32,6 +33,7 @@ function App() {
         setSelectedPage={setSelectedPage}
         isTopOfPage={isTopOfPage}
       />
+      <Home selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
     </div>
   )
 }

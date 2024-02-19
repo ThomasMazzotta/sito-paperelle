@@ -15,8 +15,7 @@ export default {
         "secondary-500": "#FFC132",
       },
       backgroundImage: (theme) => ({
-        "gradient-yellowred":
-          "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
+        "gradient-yellowred": "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
         "mobile-home": "url('./assets/HomePageGraphic.png')",
       }),
       fontFamily: {
@@ -24,7 +23,7 @@ export default {
         montserrat: ["Montserrat", "sans-serif"],
       },
       content: {
-        evolvetext: "url('./assets/EvolveText.png')",
+        ducks: "url('./assets/Ducks.png')",
         abstractwaves: "url('./assets/AbstractWaves.png')",
         sparkles: "url('./assets/Sparkles.png')",
         circles: "url('./assets/Circles.png')",
@@ -37,4 +36,4 @@ export default {
     },
   },
   plugins: [],
-};
+}
