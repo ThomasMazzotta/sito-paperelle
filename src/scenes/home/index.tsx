@@ -5,6 +5,11 @@ import HomePageText from "@/assets/HomePageText.png"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import HomePageGraphic from "@/assets/HomePageGraphic.png"
 import { motion } from "framer-motion"
+import Sponsor1 from "@/assets/DuckKing1.png"
+import Sponsor2 from "@/assets/DuckSoldier1.png"
+import Sponsor3 from "@/assets/DuckNasa1.png"
+
+//remeber to import sponsor
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void
@@ -14,7 +19,7 @@ type Props = {
 const Home = ({ setSelectedPage, selectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
   return (
-    <section id="home" className="gap-16 py-10 bg-gray-20 md:h-full md:pb-0">
+    <section id="home" className="gap-16 py-4 md:py-32 bg-gray-20 md:min-h-full md:pb-0">
       {/* IMAGE and MAIN HEADER ps. onViewportEnter calls a function when this div reach the viewport*/}
       <motion.div
         className="items-center justify-center w-5/6 mx-auto md:flex md:h-5/6"
@@ -35,7 +40,7 @@ const Home = ({ setSelectedPage, selectedPage }: Props) => {
             }}
           >
             <div className="relative">
-              <div className="before:absolute before:-top-20 md:before:content-ducks before:left-20 before:z-[-1]">
+              <div className="before:absolute before:-top-20 md:before:content-ducks before:left-10 before:z-[-1]">
                 <img src={HomePageText} alt="home-page-text" />
               </div>
             </div>
@@ -68,19 +73,27 @@ const Home = ({ setSelectedPage, selectedPage }: Props) => {
           </motion.div>
         </div>
         {/* IMAGE */}
-        <div className="flex basis-3/5 justify center md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
+        <motion.div
+          className="flex mt-6 basis-3/5 justify center md:z-10 md:ml-40 md:-mt-5 md:justify-items-end"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.0, duration: 0.8 }}
+          variants={{
+            hidden: { opacity: 0.8, scale: 0.9 },
+            visible: { opacity: 1, scale: 1 },
+          }}
+        >
           <img alt="home-page-graphic" src={HomePageGraphic} />
-        </div>
+        </motion.div>
       </motion.div>
       {/* SPONSOR (big screen) */}
       {isAboveMediumScreens && (
-        <div className="h-[150px] w-full bg-primary-100 py-10">
-          <div className="w-5/6 mx-auto">
-            <div className="flex items-center justify-between w-3/5 gap-8">
-              <img src="" alt="" />
-              <img src="" alt="" />
-              <img src="" alt="" />
-            </div>
+        <div className="h-[150px] w-full bg-primary-100 py-10 flex xl:h-[250px]">
+          <div className="flex items-center w-5/6 gap-32 mx-auto">
+            <img src={Sponsor1} alt="sponsor1" className="w-1/12" />
+            <img src={Sponsor2} alt="sponsor2" className="w-1/12" />
+            <img src={Sponsor3} alt="sponsor3" className="w-1/12" />
           </div>
         </div>
       )}

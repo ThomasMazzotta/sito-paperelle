@@ -13,5 +13,6 @@ body,
   height: 100%;
   width: 100%;
   font-family: "DM Sans", sans-serif;
+  cursor: url("./assets/Logo.png"), auto !important;
   @apply text-gray-500; /*in this way the default text color will be this*/
 }
