@@ -4,6 +4,8 @@ import { motion } from "framer-motion"
 import HText from "@/shared/HText"
 import { BenefitType } from "@/shared/types"
 import Benefit from "./Benefit"
+import ActionButton from "@/shared/ActionButton"
+import BenefitsDuck from "@/assets/BenefitsDuck.png"
 
 const benefits: Array<BenefitType> = [
   {
@@ -78,6 +80,81 @@ const Benefits = ({ setSelectedPage }: Props) => {
               setSelectedPage={setSelectedPage} //because of learn more
             />
           ))}
+        </motion.div>
+        {/* GRAPHICS AND DESCRIPTIONS*/}
+        <motion.div
+          className="items-center justify-between gap-20 mt-16 md:mt-28 md:flex "
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.6 }}
+          transition={{ delay: 0.0, duration: 0.8 }}
+          variants={{
+            hidden: { opacity: 0.8, scale: 0.9 },
+            visible: { opacity: 1, scale: 1 },
+          }}
+        >
+          {/* GRAPHIC */}
+          <img
+            className="w-5/6 mx-auto mb-10 md:mb-0 sm:w-4/12"
+            src={BenefitsDuck}
+            alt="benefits-duck"
+          />
+          {/* DESCRIPTION */}
+          <div>
+            {/* TITLE */}
+            <div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.6 }}
+                variants={{
+                  hidden: { opacity: 0, x: 50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+              >
+                <HText>
+                  MILLIONS OF HAPPY DUCKS ENTER THE <span className="text-primary-500">REIGN</span>
+                </HText>
+              </motion.div>
+            </div>
+            {/* DESCRIPTION */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.6 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              <p className="my-5">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam maxime deserunt aut
+                quisquam omnis iusto saepe facere debitis. Nobis optio corporis iste! Ex officia
+                earum dolorem, velit voluptatum quos voluptatem.
+              </p>
+              <p className="mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quibusdam,
+                voluptatem dolores obcaecati eaque laborum, reprehenderit alias saepe vitae quas et
+                hic? Nostrum ipsa placeat iusto, perspiciatis sequi reiciendis molestiae.
+              </p>
+            </motion.div>
+            {/* BUTTON */}
+            <motion.div
+              className="relative mt-16"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ delay: 0.5, duration: 0.6 }}
+              variants={{
+                hidden: { opacity: 0, x: 50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              <ActionButton setSelectedPage={setSelectedPage}>Join Now</ActionButton>
+            </motion.div>
+          </div>
         </motion.div>
       </motion.div>
     </section>

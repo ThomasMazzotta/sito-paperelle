@@ -14,7 +14,8 @@ const ActionButton = ({ children, setSelectedPage }: Props) => {
       onClick={() => {
         setSelectedPage(SelectedPage.ContactUs)
       }}
-      href={`${SelectedPage.ContactUs}`}
+      //Remember to add the "/" I have lost an hour bc of this:(
+      href={`/${SelectedPage.ContactUs}`}
     >
       {children}
     </AnchorLink>

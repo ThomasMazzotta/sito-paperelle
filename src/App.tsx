@@ -1,7 +1,10 @@
 //if the file in the navbar is called index.tsx, there is no need to include it in the import
 import Navbar from "@/scenes/navbar"
 import Home from "@/scenes/home"
+import OurClasses from "@/scenes/ourClasses"
 import Benefits from "@/scenes/benefits"
+import ContactUs from "./scenes/contactUs"
+import Footer from "./scenes/footer"
 import { useEffect, useState } from "react"
 import { SelectedPage } from "./shared/types"
 
@@ -36,6 +39,9 @@ function App() {
       />
       <Home selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
+      <OurClasses setSelectedPage={setSelectedPage}></OurClasses>
+      <ContactUs setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   )
 }
