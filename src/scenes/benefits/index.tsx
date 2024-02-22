@@ -1,5 +1,5 @@
 import { SelectedPage } from "@/shared/types"
-import { HomeModernIcon, UserGroupIcon, AcademicCapIcon } from "@heroicons/react/24/solid"
+import { GlobeAltIcon, UserGroupIcon, HeartIcon } from "@heroicons/react/24/solid"
 import { motion } from "framer-motion"
 import HText from "@/shared/HText"
 import { BenefitType } from "@/shared/types"
@@ -9,22 +9,22 @@ import BenefitsDuck from "@/assets/BenefitsDuck.png"
 
 const benefits: Array<BenefitType> = [
   {
-    icon: <HomeModernIcon className="w-6 h-6" />,
-    title: "State of the Art Facilities",
-    description:
-      " orem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, nisi porro aliquid quae nesciunt optio sequi vitae amet, facilis vel, labore doloremque quia laborum?",
-  },
-  {
     icon: <UserGroupIcon className="w-6 h-6" />,
-    title: "100's of Diverse classes",
+    title: "Unity in Diversity",
     description:
-      " orem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, nisi porro aliquid quae nesciunt optio sequi vitae amet, facilis vel, labore doloremque quia laborum?",
+      "Within our realm, every feather, quack, and waddle is celebrated. We thrive together, embracing the vast tapestry of duck life, united in our differences",
   },
   {
-    icon: <AcademicCapIcon className="w-6 h-6" />,
-    title: "Expert and pro Trainers",
+    icon: <GlobeAltIcon className="w-6 h-6" />,
+    title: "Freedom and Exploration",
     description:
-      " orem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, nisi porro aliquid quae nesciunt optio sequi vitae amet, facilis vel, labore doloremque quia laborum?",
+      "Our skies and waters beckon, offering endless adventures. In our kingdom, every duck has the freedom to explore, learn, and grow, bound only by the horizo",
+  },
+  {
+    icon: <HeartIcon className="w-6 h-6" />,
+    title: "Stewardship and Care",
+    description:
+      "We honor the ponds, lakes, and lands that nurture us. Our commitment to protecting our environment ensures a thriving kingdom for generations of ducks to come",
   },
 ]
 
@@ -58,9 +58,9 @@ const Benefits = ({ setSelectedPage }: Props) => {
         >
           <HText>MORE THAN JUST A HUMAN</HText>
           <p className="my-5 text-sm">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, nisi porro aliquid
-            quae nesciunt optio sequi vitae amet, facilis vel, labore doloremque quia laborum? Nam
-            nesciunt magnam dolore aperiam facere.
+            Discover a world where ducks surpass mere human boundaries, embodying wisdom, courage,
+            and camaraderie. Here, every duck contributes to a greater cause, soaring beyond the
+            ordinary.
           </p>
         </motion.div>
         {/* BENEFITS */}
@@ -130,14 +130,16 @@ const Benefits = ({ setSelectedPage }: Props) => {
               }}
             >
               <p className="my-5">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam maxime deserunt aut
-                quisquam omnis iusto saepe facere debitis. Nobis optio corporis iste! Ex officia
-                earum dolorem, velit voluptatum quos voluptatem.
+                Within the borders of our splendid realm, millions of ducks find joy and
+                fulfillment. It's a sanctuary where laughter echoes over the waters, and happiness
+                is as abundant as the grains on the shore. Every day, countless ducks join, drawn by
+                the promise of a community that cherishes joy and friendship above all
               </p>
               <p className="mb-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quibusdam,
-                voluptatem dolores obcaecati eaque laborum, reprehenderit alias saepe vitae quas et
-                hic? Nostrum ipsa placeat iusto, perspiciatis sequi reiciendis molestiae.
+                As these happy ducks enter, they're greeted by a world of unparalleled beauty and
+                peace. Here, every quack is a note in the symphony of unity, and every wingbeat
+                propels us toward a future bright with hope. This realm is not just a place, but a
+                journey towards endless happiness, shared by millions
               </p>
             </motion.div>
             {/* BUTTON */}

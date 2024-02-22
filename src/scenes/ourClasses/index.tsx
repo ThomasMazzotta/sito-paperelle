@@ -24,39 +24,39 @@ const arrowAnimation = {
 
 const classes: Array<ClassType> = [
   {
-    name: "Science sector",
+    name: "Scientist",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, recusandae voluptate numquam enim in incidunt, quas aliquam sequi ullam voluptatem saepe dolore mollitia nobis! Blanditiis est quae nam sed doloribus.",
+      "Dive into the mysteries of our world, conducting experiments and research to bring knowledge and innovation. Your work lights the way to a brighter future for all ducks",
     image: gallery1,
   },
   {
-    name: "Farming",
+    name: "Farmer",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, recusandae voluptate numquam enim in incidunt, quas aliquam sequi ullam voluptatem saepe dolore mollitia nobis! Blanditiis est quae nam sed doloribus.",
+      "With dedication and care, you cultivate the land, ensuring a bountiful harvest. Your efforts feed the realm, sustaining life and growth in every corner",
     image: gallery2,
   },
   {
-    name: "Art",
+    name: "Artist",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, recusandae voluptate numquam enim in incidunt, quas aliquam sequi ullam voluptatem saepe dolore mollitia nobis! Blanditiis est quae nam sed doloribus.",
+      "Capture the essence of our realm with your creativity. Through painting, music, or storytelling, you reflect the beauty around us, inspiring hearts and minds",
     image: gallery3,
   },
   {
-    name: "Government",
+    name: "Government Official",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, recusandae voluptate numquam enim in incidunt, quas aliquam sequi ullam voluptatem saepe dolore mollitia nobis! Blanditiis est quae nam sed doloribus.",
+      "Steer the course of our community with wisdom and integrity. Your decisions shape our laws, policies, and daily life, guiding us towards harmony and prosperity",
     image: gallery4,
   },
   {
-    name: "Economic",
+    name: "Economist",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, recusandae voluptate numquam enim in incidunt, quas aliquam sequi ullam voluptatem saepe dolore mollitia nobis! Blanditiis est quae nam sed doloribus.",
+      "Guard the wealth of our kingdom, managing resources and strategies for economic growth. Your expertise ensures stability and prosperity, allowing our society to flourish",
     image: gallery5,
   },
   {
-    name: "Armyr",
+    name: "Military",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, recusandae voluptate numquam enim in incidunt, quas aliquam sequi ullam voluptatem saepe dolore mollitia nobis! Blanditiis est quae nam sed doloribus.",
+      " Defend our borders and maintain peace, standing vigilant against any threat. Your courage and strength are the pillars upon which our safety and freedom rest",
     image: gallery6,
   },
 ]
@@ -81,11 +81,13 @@ const OurClasses = ({ setSelectedPage }: Props) => {
           }}
         >
           <div className="relative md:w-3/5">
-            <HText>Our Classes</HText>
+            <HText>Choose your path</HText>
             <p className="py-5">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis nostrum asperiores
-              excepturi earum voluptate quae qui exercitationem provident tenetur quam. Omnis,
-              eveniet quisquam fuga tempora inventore commodi illo architecto odit?
+              Step into a realm where your career defines our collective future. Be it as a
+              visionary scientist, nurturing farmer, dedicated government official, creative artist,
+              savvy economist, or brave soldier, your role is pivotal. Choose your path and let your
+              talents flourish, contributing to the prosperity and safety of our kingdom. Every
+              choice carves out a part of our shared destiny
             </p>
             <motion.div {...arrowAnimation} className="flex items-center gap-2">
               <span className="pt-3 -mb-5 sm:hidden">Slide & click 🦆</span>

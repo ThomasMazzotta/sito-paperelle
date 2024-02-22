@@ -29,7 +29,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
   }
 
   return (
-    <section id="contactus" className="w-5/6 pt-24 pb-32 mx-auto">
+    <section id="contactus" className="w-5/6 pt-24 mx-auto pb-28">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}>
         {/* HEADER */}
         <motion.div
@@ -44,12 +44,13 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           }}
         >
           <HText>
-            <span className="text-primary-500">JOIN NOW</span> THE DUCK EMPIRE
+            <span className=" text-primary-500">JOIN NOW</span> THE DUCK EMPIRE
           </HText>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium voluptates
-            aspernatur explicabo ipsam doloremque reprehenderit veritatis! Culpa laboriosam maiores,
-            nesciunt eligendi officiis minus qui earum error porro ullam vitae itaque.
+          <p className="mt-7">
+            Embark on an extraordinary adventure and become part of something greater. The Duck
+            Empire awaits you, offering a world of opportunity, camaraderie, and growth. Fill out
+            the form below to join our vibrant community and start your journey in a realm where
+            every duck thrives
           </p>
         </motion.div>
 
@@ -131,7 +132,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           </motion.div>
 
           <motion.div
-            className="relative mt-16 basis-2/5 md:-mt-20"
+            className="relative mt-16 basis-2/5 md:-mt-36"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -141,7 +142,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-ducks md:ml-10">
+            <div className="w-full before:absolute before:-bottom-16 before:right-20 before:z-[-1] md:before:content-ducks md:ml-10">
               <img className="w-full" alt="reign" src={Reign} />
             </div>
           </motion.div>

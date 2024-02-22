@@ -45,9 +45,9 @@ const Home = ({ setSelectedPage, selectedPage }: Props) => {
               </div>
             </div>
             <p className="mt-8 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aspernatur sit
-              accusantium odio deserunt! Cum voluptate magnam quia earum laborum! Eius maiores odit
-              consectetur fugiat quas obcaecati! Dolorem, natus ratione.
+              Join the grand realm where only ducks reign supreme! Embrace your quacks, spread your
+              wings, and unite under the banner of feathery freedom. This is your kingdom, where
+              every quack matters
             </p>
           </motion.div>
           {/* ACTIONS */}
