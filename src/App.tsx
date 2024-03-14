@@ -10,7 +10,9 @@ import { SelectedPage } from "./shared/types"
 
 function App() {
   // this state controls which page (from the navbar) is selected
-  const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home)
+  const [selectedPage, setSelectedPage] = useState<SelectedPage>(
+    SelectedPage.Home
+  )
   // this state controls if the navbar is on top of the page or not
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true)
 

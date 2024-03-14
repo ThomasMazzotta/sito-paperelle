@@ -10,6 +10,7 @@ import gallery6 from "@/assets/army.webp"
 import rightArrow from "@/assets/rightArrow.svg"
 import HText from "@/shared/HText"
 import Class from "./Class"
+import { Helmet } from "react-helmet"
 
 const arrowAnimation = {
   animate: {
@@ -68,6 +69,18 @@ type Props = {
 const OurClasses = ({ setSelectedPage }: Props) => {
   return (
     <section className="w-full py-32 bg-primary-100" id="ourclasses">
+      {/* META DESCRIPTION */}
+      <Helmet>
+        <title>Choose your path</title>
+        <meta
+          name="description"
+          content=" Step into a realm where your career defines our collective future.
+              Be it as a visionary scientist, nurturing farmer, dedicated
+              government official, creative artist, savvy economist, or brave
+              soldier, your role is pivotal."
+        />
+      </Helmet>
+
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}
       >

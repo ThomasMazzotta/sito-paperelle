@@ -10,6 +10,7 @@ import { BenefitType } from "@/shared/types"
 import Benefit from "./Benefit"
 import ActionButton from "@/shared/ActionButton"
 import BenefitsDuck from "@/assets/BenefitsDuck.webp"
+import { Helmet } from "react-helmet"
 
 const benefits: Array<BenefitType> = [
   {
@@ -47,6 +48,16 @@ type Props = {
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
     <section id="benefits" className="w-5/6 min-h-full py-20 mx-auto">
+      {/* META DESCRIPTION */}
+      <Helmet>
+        <title>Benefits</title>
+        <meta
+          name="description"
+          content="Discover a world where ducks surpass mere human boundaries,
+            embodying wisdom, courage, and camaraderie. Here, every duck
+            contributes to a greater cause, soaring beyond the ordinary."
+        />
+      </Helmet>
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
       >

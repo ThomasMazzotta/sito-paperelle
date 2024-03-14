@@ -8,6 +8,7 @@ import { motion } from "framer-motion"
 import Sponsor1 from "@/assets/DuckKing1.webp"
 import Sponsor2 from "@/assets/DuckSoldier1.webp"
 import Sponsor3 from "@/assets/DuckNasa1.webp"
+import { Helmet } from "react-helmet"
 
 //remeber to import sponsor
 
@@ -23,6 +24,16 @@ const Home = ({ setSelectedPage, selectedPage }: Props) => {
       id="home"
       className="gap-16 py-4 md:py-32 bg-gray-20 md:min-h-full md:pb-0"
     >
+      {/* META DESCRIPTION */}
+      <Helmet>
+        <title>The Ducks Empire</title>
+        <meta
+          name="description"
+          content="Join the grand realm where only ducks reign supreme! Embrace your
+              quacks, spread your wings, and unite under the banner of feathery
+              freedom. This is your kingdom, where every quack matters"
+        />
+      </Helmet>
       {/* IMAGE and MAIN HEADER ps. onViewportEnter calls a function when this div reach the viewport*/}
       <motion.div
         className="items-center justify-center w-5/6 mx-auto md:flex md:h-5/6"

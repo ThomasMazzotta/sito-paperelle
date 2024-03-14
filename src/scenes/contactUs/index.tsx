@@ -3,6 +3,7 @@ import { SelectedPage } from "@/shared/types"
 import { motion } from "framer-motion"
 import Reign from "@/assets/Reign.webp"
 import HText from "@/shared/HText"
+import { Helmet } from "react-helmet"
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void
@@ -30,6 +31,17 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
   return (
     <section id="contactus" className="w-5/6 pt-24 mx-auto pb-28">
+      {/* META DESCRIPTION */}
+      <Helmet>
+        <title>Fill out the form</title>
+        <meta
+          name="description"
+          content="The Duck Empire awaits you, offering a world of
+            opportunity, camaraderie, and growth. Fill out the form below to
+            join our vibrant community and start your journey in a realm where
+            every duck thrives."
+        />
+      </Helmet>
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
       >
