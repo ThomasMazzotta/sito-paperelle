@@ -1,13 +1,13 @@
 import useMediaQuery from "@/hooks/useMediaQuery"
 import { SelectedPage } from "@/shared/types"
 import ActionButton from "@/shared/ActionButton"
-import HomePageText from "@/assets/HomePageText.png"
+import HomePageText from "@/assets/HomePageText.webp"
 import AnchorLink from "react-anchor-link-smooth-scroll"
-import HomePageGraphic from "@/assets/HomePageGraphic.png"
+import HomePageGraphic from "@/assets/HomePageGraphic.webp"
 import { motion } from "framer-motion"
-import Sponsor1 from "@/assets/DuckKing1.png"
-import Sponsor2 from "@/assets/DuckSoldier1.png"
-import Sponsor3 from "@/assets/DuckNasa1.png"
+import Sponsor1 from "@/assets/DuckKing1.webp"
+import Sponsor2 from "@/assets/DuckSoldier1.webp"
+import Sponsor3 from "@/assets/DuckNasa1.webp"
 
 //remeber to import sponsor
 
@@ -19,7 +19,10 @@ type Props = {
 const Home = ({ setSelectedPage, selectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
   return (
-    <section id="home" className="gap-16 py-4 md:py-32 bg-gray-20 md:min-h-full md:pb-0">
+    <section
+      id="home"
+      className="gap-16 py-4 md:py-32 bg-gray-20 md:min-h-full md:pb-0"
+    >
       {/* IMAGE and MAIN HEADER ps. onViewportEnter calls a function when this div reach the viewport*/}
       <motion.div
         className="items-center justify-center w-5/6 mx-auto md:flex md:h-5/6"
@@ -45,9 +48,9 @@ const Home = ({ setSelectedPage, selectedPage }: Props) => {
               </div>
             </div>
             <p className="mt-8 text-sm">
-              Join the grand realm where only ducks reign supreme! Embrace your quacks, spread your
-              wings, and unite under the banner of feathery freedom. This is your kingdom, where
-              every quack matters
+              Join the grand realm where only ducks reign supreme! Embrace your
+              quacks, spread your wings, and unite under the banner of feathery
+              freedom. This is your kingdom, where every quack matters
             </p>
           </motion.div>
           {/* ACTIONS */}
@@ -62,7 +65,9 @@ const Home = ({ setSelectedPage, selectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <ActionButton setSelectedPage={setSelectedPage}>Join Now</ActionButton>
+            <ActionButton setSelectedPage={setSelectedPage}>
+              Join Now
+            </ActionButton>
             <AnchorLink
               className="text-sm font-bold underline text-primary-500 hover:text-secondary-500"
               onClick={() => setSelectedPage(SelectedPage.ContactUs)}

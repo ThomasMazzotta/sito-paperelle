@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
-import Logo from "@/assets/Logo.png"
+import Logo from "@/assets/Logo.webp"
 import Link from "./Link"
 import { SelectedPage } from "@/shared/types"
 import useMediaQuery from "@/hooks/useMediaQuery"
@@ -21,7 +21,9 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
 
   return (
     <nav>
-      <div className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-3`}>
+      <div
+        className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-3`}
+      >
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
             {/* Left side */}
@@ -35,7 +37,11 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
               <div className={`${flexBetween} w-full `}>
                 {/* Links */}
                 <div className={`${flexBetween} gap-8 text-sm`}>
-                  <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+                  <Link
+                    page="Home"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
                   <Link
                     page="Benefits"
                     selectedPage={selectedPage}
@@ -56,7 +62,9 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
                 <div className={`${flexBetween} gap-8 `}>
                   <p>Sign In</p>
                   {/* I need setSelectedPage props to sroll along the page when the button is pressed */}
-                  <ActionButton setSelectedPage={setSelectedPage}>Become a Member</ActionButton>
+                  <ActionButton setSelectedPage={setSelectedPage}>
+                    Become a Member
+                  </ActionButton>
                 </div>
               </div>
             ) : (
@@ -82,14 +90,26 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
           </div>
           {/* Menu Items */}
           <div className="ml-[33%] flex flex-col gap-10 text-xl">
-            <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-            <Link page="Benefits" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+            <Link
+              page="Home"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="Benefits"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
             <Link
               page="Our Classes"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
-            <Link page="Contact Us" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+            <Link
+              page="Contact Us"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
           </div>
         </div>
       )}

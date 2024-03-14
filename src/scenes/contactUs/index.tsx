@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form"
 import { SelectedPage } from "@/shared/types"
 import { motion } from "framer-motion"
-import Reign from "@/assets/Reign.png"
+import Reign from "@/assets/Reign.webp"
 import HText from "@/shared/HText"
 
 type Props = {
@@ -30,7 +30,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
   return (
     <section id="contactus" className="w-5/6 pt-24 mx-auto pb-28">
-      <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}>
+      <motion.div
+        onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
+      >
         {/* HEADER */}
         <motion.div
           className="md:w-3/5"
@@ -47,9 +49,10 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             <span className=" text-primary-500">JOIN NOW</span> THE DUCK EMPIRE
           </HText>
           <p className="mt-7">
-            Embark on an extraordinary adventure and become part of something greater. The Duck
-            Empire awaits you, offering a world of opportunity, camaraderie, and growth. Fill out
-            the form below to join our vibrant community and start your journey in a realm where
+            Embark on an extraordinary adventure and become part of something
+            greater. The Duck Empire awaits you, offering a world of
+            opportunity, camaraderie, and growth. Fill out the form below to
+            join our vibrant community and start your journey in a realm where
             every duck thrives
           </p>
         </motion.div>
@@ -85,7 +88,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               {errors.name && (
                 <p className="mt-1 text-primary-500">
                   {errors.name.type === "required" && "This field is required."}
-                  {errors.name.type === "maxLength" && "Max length is 100 char."}
+                  {errors.name.type === "maxLength" &&
+                    "Max length is 100 char."}
                 </p>
               )}
 
@@ -100,7 +104,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               />
               {errors.email && (
                 <p className="mt-1 text-primary-500">
-                  {errors.email.type === "required" && "This field is required."}
+                  {errors.email.type === "required" &&
+                    "This field is required."}
                   {errors.email.type === "pattern" && "Invalid email address."}
                 </p>
               )}
@@ -117,8 +122,10 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               />
               {errors.message && (
                 <p className="mt-1 text-primary-500">
-                  {errors.message.type === "required" && "This field is required."}
-                  {errors.message.type === "maxLength" && "Max length is 2000 char."}
+                  {errors.message.type === "required" &&
+                    "This field is required."}
+                  {errors.message.type === "maxLength" &&
+                    "Max length is 2000 char."}
                 </p>
               )}
 

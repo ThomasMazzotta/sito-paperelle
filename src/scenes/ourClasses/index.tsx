@@ -1,12 +1,12 @@
 import { SelectedPage } from "@/shared/types"
 import { ClassType } from "@/shared/types"
 import { motion } from "framer-motion"
-import gallery1 from "@/assets/science.png"
-import gallery2 from "@/assets/farm.png"
-import gallery3 from "@/assets/art.png"
-import gallery4 from "@/assets/government.png"
-import gallery5 from "@/assets/commerce.png"
-import gallery6 from "@/assets/army.png"
+import gallery1 from "@/assets/science.webp"
+import gallery2 from "@/assets/farm.webp"
+import gallery3 from "@/assets/art.webp"
+import gallery4 from "@/assets/government.webp"
+import gallery5 from "@/assets/commerce.webp"
+import gallery6 from "@/assets/army.webp"
 import rightArrow from "@/assets/rightArrow.svg"
 import HText from "@/shared/HText"
 import Class from "./Class"
@@ -68,7 +68,9 @@ type Props = {
 const OurClasses = ({ setSelectedPage }: Props) => {
   return (
     <section className="w-full py-32 bg-primary-100" id="ourclasses">
-      <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}>
+      <motion.div
+        onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}
+      >
         <motion.div
           className="w-5/6 mx-auto"
           initial="hidden"
@@ -83,15 +85,21 @@ const OurClasses = ({ setSelectedPage }: Props) => {
           <div className="relative md:w-3/5">
             <HText>Choose your path</HText>
             <p className="py-5">
-              Step into a realm where your career defines our collective future. Be it as a
-              visionary scientist, nurturing farmer, dedicated government official, creative artist,
-              savvy economist, or brave soldier, your role is pivotal. Choose your path and let your
-              talents flourish, contributing to the prosperity and safety of our kingdom. Every
-              choice carves out a part of our shared destiny
+              Step into a realm where your career defines our collective future.
+              Be it as a visionary scientist, nurturing farmer, dedicated
+              government official, creative artist, savvy economist, or brave
+              soldier, your role is pivotal. Choose your path and let your
+              talents flourish, contributing to the prosperity and safety of our
+              kingdom. Every choice carves out a part of our shared destiny
             </p>
             <motion.div {...arrowAnimation} className="flex items-center gap-2">
               <span className="pt-3 -mb-5 sm:hidden">Slide & click 🦆</span>
-              <img id="arrow" src={rightArrow} alt="right-arrow" className="w-10 pt-3 -mb-6" />
+              <img
+                id="arrow"
+                src={rightArrow}
+                alt="right-arrow"
+                className="w-10 pt-3 -mb-6"
+              />
             </motion.div>
           </div>
         </motion.div>

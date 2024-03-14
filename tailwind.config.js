@@ -15,18 +15,19 @@ export default {
         "secondary-500": "#FFC132",
       },
       backgroundImage: (theme) => ({
-        "gradient-yellowred": "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
-        "mobile-home": "url('./assets/HomePageGraphic.png')",
+        "gradient-yellowred":
+          "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
+        "mobile-home": "url('./assets/HomePageGraphic.webp')",
       }),
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
       content: {
-        ducks: "url('./assets/Ducks.png')",
-        abstractwaves: "url('./assets/AbstractWaves.png')",
-        sparkles: "url('./assets/Sparkles.png')",
-        circles: "url('./assets/Circles.png')",
+        ducks: "url('./assets/Ducks.webp')",
+        abstractwaves: "url('./assets/AbstractWaves.webp')",
+        sparkles: "url('./assets/Sparkles.webp')",
+        circles: "url('./assets/Circles.webp')",
       },
     },
     screens: {

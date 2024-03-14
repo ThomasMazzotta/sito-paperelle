@@ -1,11 +1,15 @@
 import { SelectedPage } from "@/shared/types"
-import { GlobeAltIcon, UserGroupIcon, HeartIcon } from "@heroicons/react/24/solid"
+import {
+  GlobeAltIcon,
+  UserGroupIcon,
+  HeartIcon,
+} from "@heroicons/react/24/solid"
 import { motion } from "framer-motion"
 import HText from "@/shared/HText"
 import { BenefitType } from "@/shared/types"
 import Benefit from "./Benefit"
 import ActionButton from "@/shared/ActionButton"
-import BenefitsDuck from "@/assets/BenefitsDuck.png"
+import BenefitsDuck from "@/assets/BenefitsDuck.webp"
 
 const benefits: Array<BenefitType> = [
   {
@@ -43,7 +47,9 @@ type Props = {
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
     <section id="benefits" className="w-5/6 min-h-full py-20 mx-auto">
-      <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}>
+      <motion.div
+        onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
+      >
         {/* HEADER */}
         <motion.div
           className="md:my-5 md:w-3/5"
@@ -58,9 +64,9 @@ const Benefits = ({ setSelectedPage }: Props) => {
         >
           <HText>MORE THAN JUST A HUMAN</HText>
           <p className="my-5 text-sm">
-            Discover a world where ducks surpass mere human boundaries, embodying wisdom, courage,
-            and camaraderie. Here, every duck contributes to a greater cause, soaring beyond the
-            ordinary.
+            Discover a world where ducks surpass mere human boundaries,
+            embodying wisdom, courage, and camaraderie. Here, every duck
+            contributes to a greater cause, soaring beyond the ordinary.
           </p>
         </motion.div>
         {/* BENEFITS */}
@@ -114,7 +120,8 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 }}
               >
                 <HText>
-                  MILLIONS OF HAPPY DUCKS ENTER THE <span className="text-primary-500">REIGN</span>
+                  MILLIONS OF HAPPY DUCKS ENTER THE{" "}
+                  <span className="text-primary-500">REIGN</span>
                 </HText>
               </motion.div>
             </div>
@@ -130,15 +137,17 @@ const Benefits = ({ setSelectedPage }: Props) => {
               }}
             >
               <p className="my-5">
-                Within the borders of our splendid realm, millions of ducks find joy and
-                fulfillment. It's a sanctuary where laughter echoes over the waters, and happiness
-                is as abundant as the grains on the shore. Every day, countless ducks join, drawn by
-                the promise of a community that cherishes joy and friendship above all
+                Within the borders of our splendid realm, millions of ducks find
+                joy and fulfillment. It's a sanctuary where laughter echoes over
+                the waters, and happiness is as abundant as the grains on the
+                shore. Every day, countless ducks join, drawn by the promise of
+                a community that cherishes joy and friendship above all
               </p>
               <p className="mb-5">
-                As these happy ducks enter, they're greeted by a world of unparalleled beauty and
-                peace. Here, every quack is a note in the symphony of unity, and every wingbeat
-                propels us toward a future bright with hope. This realm is not just a place, but a
+                As these happy ducks enter, they're greeted by a world of
+                unparalleled beauty and peace. Here, every quack is a note in
+                the symphony of unity, and every wingbeat propels us toward a
+                future bright with hope. This realm is not just a place, but a
                 journey towards endless happiness, shared by millions
               </p>
             </motion.div>
@@ -154,7 +163,9 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <ActionButton setSelectedPage={setSelectedPage}>Join Now</ActionButton>
+              <ActionButton setSelectedPage={setSelectedPage}>
+                Join Now
+              </ActionButton>
             </motion.div>
           </div>
         </motion.div>
