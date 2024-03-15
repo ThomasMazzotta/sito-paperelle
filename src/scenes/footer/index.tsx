@@ -13,13 +13,13 @@ const Footer = () => {
           <p>© Ducks All Rights Reserved</p>
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
-          <h4 className="font-bold">Links</h4>
+          <h2 className="font-bold">Links</h2>
           <p className="my-5"> DuckEmpireLegends.com</p>
           <p className="my-5">DuckEmpireEvents.com</p>
           <p>QuackAnswers.com</p>
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
-          <h4 className="font-bold">Contact Us</h4>
+          <h2 className="font-bold">Contact Us</h2>
           <p className="my-5">
             For whispers and quacks, reach out through
             contact@DuckEmpireRealm.com or summon us on Quacker

@@ -16,6 +16,7 @@ const ActionButton = ({ children, setSelectedPage }: Props) => {
       }}
       //Remember to add the "/" I have lost an hour bc of this:(
       href={`/${SelectedPage.ContactUs}`}
+      aria-label="contact us"
     >
       {children}
     </AnchorLink>

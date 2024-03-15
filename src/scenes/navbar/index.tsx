@@ -69,6 +69,7 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
               </div>
             ) : (
               <button
+                aria-label="open drop down menu"
                 className="p-2 rounded-full bg-secondary-500"
                 onClick={() => setIsMenuToggles(!isMenuToggled)}
               >
@@ -81,10 +82,13 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
       {/* MOBILE MODAL */}
       {/* if i press the icon a modal appears! */}
       {!isAbovemediumScreens && isMenuToggled && (
-        <div className="fixed bottom-0 right-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl opacity-95">
+        <div className="fixed bottom-0 right-0 z-50 h-full w-[300px] bg-primary-100 drop-shadow-xl opacity-95">
           {/* Close Icon */}
           <div className="flex justify-end p-12">
-            <button onClick={() => setIsMenuToggles(!isMenuToggled)}>
+            <button
+              aria-label="close drop down menu"
+              onClick={() => setIsMenuToggles(!isMenuToggled)}
+            >
               <XMarkIcon className="w-6 h-6 text-gray-400" />
             </button>
           </div>

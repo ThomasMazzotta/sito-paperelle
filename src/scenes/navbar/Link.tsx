@@ -15,9 +15,10 @@ const Link = ({ page, selectedPage, setSelectedPage }: Props) => {
   console.log(selectedPage, lowerCasePage)
   return (
     <AnchorLink
-      className={`${selectedPage === lowerCasePage ? "text-primary-500" : ""} transition duration-500 hover:text-primary-300`}
+      className={`${selectedPage === lowerCasePage ? "underline" : ""} transition duration-500 hover:text-red-700`}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
+      aria-label="contact us"
     >
       {page}
     </AnchorLink>
