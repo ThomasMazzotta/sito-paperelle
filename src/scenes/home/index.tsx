@@ -106,7 +106,6 @@ const Home = ({ setSelectedPage, selectedPage }: Props) => {
               src={HomePageGraphic}
               alt="home-page-graphic"
               className="object-cover w-full h-full"
-              loading="lazy"
             />
           </div>
         </motion.div>
