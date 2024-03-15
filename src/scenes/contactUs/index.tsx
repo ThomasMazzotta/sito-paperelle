@@ -162,7 +162,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             }}
           >
             <div className="w-full before:absolute before:-bottom-16 before:right-20 before:z-[-1] md:before:content-ducks md:ml-10">
-              <img className="w-full" alt="reign" src={Reign} />
+              <img className="w-full" alt="reign" src={Reign} loading="lazy" />
             </div>
           </motion.div>
         </div>

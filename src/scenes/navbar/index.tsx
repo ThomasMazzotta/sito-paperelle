@@ -28,7 +28,7 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
           <div className={`${flexBetween} w-full gap-16`}>
             {/* Left side */}
             <div className={`${flexBetween} gap-3`}>
-              <img src={Logo} alt="logo" className="w-12" />
+              <img src={Logo} alt="logo" className="w-12" loading="lazy" />
               <p className="font-black font-montserrat">DUCKS</p>
             </div>
 

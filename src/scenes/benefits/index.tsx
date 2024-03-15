@@ -115,6 +115,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             className="w-5/6 mx-auto mb-10 md:mb-0 sm:w-4/12"
             src={BenefitsDuck}
             alt="benefits-duck"
+            loading="lazy"
           />
           {/* DESCRIPTION */}
           <div>

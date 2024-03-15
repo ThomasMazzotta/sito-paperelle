@@ -112,6 +112,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
                 src={rightArrow}
                 alt="right-arrow"
                 className="w-10 pt-3 -mb-6"
+                loading="lazy"
               />
             </motion.div>
           </div>

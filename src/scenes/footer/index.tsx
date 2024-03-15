@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="py-16 bg-primary-100">
       <div className="w-5/6 gap-16 mx-auto justify-content md:flex">
         <div className="mt-16 basis-1/2 md:mt-0">
-          <img alt="logo" src={Logo} className="w-12" />
+          <img alt="logo" src={Logo} className="w-12" loading="lazy" />
           <p className="my-5">
             Discover the heart of the Duck Empire. Explore, connect, and soar
             with us. Together, we make waves

@@ -55,7 +55,7 @@ const Home = ({ setSelectedPage, selectedPage }: Props) => {
           >
             <div className="relative">
               <div className="before:absolute before:-top-20 md:before:content-ducks before:left-10 before:z-[-1]">
-                <img src={HomePageText} alt="home-page-text" />
+                <img src={HomePageText} alt="home-page-text" loading="lazy" />
               </div>
             </div>
             <p className="mt-8 text-sm">
@@ -101,16 +101,38 @@ const Home = ({ setSelectedPage, selectedPage }: Props) => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <img alt="home-page-graphic" src={HomePageGraphic} />
+          <div className="aspect-w-16 aspect-h-9">
+            <img
+              src={HomePageGraphic}
+              alt="home-page-graphic"
+              className="object-cover w-full h-full"
+              loading="lazy"
+            />
+          </div>
         </motion.div>
       </motion.div>
       {/* SPONSOR (big screen) */}
       {isAboveMediumScreens && (
         <div className="h-[150px] w-full bg-primary-100 py-10 flex xl:h-[250px]">
           <div className="flex items-center w-5/6 gap-32 mx-auto">
-            <img src={Sponsor1} alt="sponsor1" className="w-1/12" />
-            <img src={Sponsor2} alt="sponsor2" className="w-1/12" />
-            <img src={Sponsor3} alt="sponsor3" className="w-1/12" />
+            <img
+              src={Sponsor1}
+              alt="sponsor1"
+              className="w-1/12"
+              loading="lazy"
+            />
+            <img
+              src={Sponsor2}
+              alt="sponsor2"
+              className="w-1/12"
+              loading="lazy"
+            />
+            <img
+              src={Sponsor3}
+              alt="sponsor3"
+              className="w-1/12"
+              loading="lazy"
+            />
           </div>
         </div>
       )}
