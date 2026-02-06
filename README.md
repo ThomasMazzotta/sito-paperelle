@@ -1,9 +1,5 @@
 # INFO
 
-## OnlyDucks Website link
-
-https://onlyducks.netlify.app/
-
 ## Languages and Libraries
 
 1. React + vite
