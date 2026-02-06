@@ -12,11 +12,6 @@
 8. react-hook-form
 9. react-helmet
 
-## Other Programs
 
-1. Photoshop
-2. ChatGpt
-3. Canva
-4. FormSubmit
 
 
