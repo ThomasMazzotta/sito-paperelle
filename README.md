@@ -23,6 +23,4 @@ https://onlyducks.netlify.app/
 3. Canva
 4. FormSubmit
 
-## Original Website 💖
 
-https://www.youtube.com/watch?v=I2NNxr3WPDo&t=2085s&ab_channel=EdRoh
